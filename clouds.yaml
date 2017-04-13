@@ -1,0 +1,29 @@
+clouds:
+  one_cloud:
+    auth:
+      username: onecloud@cloud1.com
+      password: cloud1_secret
+      project_name: cloud_1_project
+      auth_url: http://my_cloud_1.com:35357/v3
+    regions:
+    - name: ams01
+      values:
+        networks:
+        - name: inap-17037-WAN1654
+          routes_externally: true
+        - name: inap-17037-LAN6745
+    - name: nyj01
+      values:
+        networks:
+        - name: inap-17037-WAN1654
+          routes_externally: true
+        - name: inap-17037-LAN6745
+
+  openstack_liberty:
+    region_name: RegionOne
+    auth:
+      username: admin
+      password: P@ssw0rd
+      project_name: admin
+      auth_url: http://192.168.56.102:35357/v3
+      domain_name: default
